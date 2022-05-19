@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shatokhin.lessonXML.MainActivity">
+
+    <Button
+        android:id="@+id/btnTelegramConstraintLayout"
+        style="@style/MaterialAlertDialog.Material3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:width="260dp"
+        android:backgroundTint="@color/background_header"
+        android:text="Telegram Constraint Layout"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnTelegramOtherLayout"
+        style="@style/MaterialAlertDialog.Material3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="260dp"
+        android:backgroundTint="@color/background_header"
+        android:text="Telegram Other Layout"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTelegramConstraintLayout"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnMusicPlayerConstraintLayout"
+        style="@style/MaterialAlertDialog.Material3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:width="260dp"
+        android:backgroundTint="@color/background_music_player"
+        android:text="MusicPlayer Constraint Layout"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTelegramOtherLayout"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnMusicPlayerOtherLayout"
+        style="@style/MaterialAlertDialog.Material3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="260dp"
+        android:backgroundTint="@color/background_music_player"
+        android:text="MusicPlayer Other Layout"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMusicPlayerConstraintLayout"
+        tools:ignore="TextContrastCheck" />
+    <Button
+        android:id="@+id/btnCalculatorConstraintLayout"
+        style="@style/MaterialAlertDialog.Material3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:width="260dp"
+        android:backgroundTint="@color/calculator"
+        android:text="Calculator Constraint Layout"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMusicPlayerOtherLayout"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnCalculatorOtherLayout"
+        style="@style/MaterialAlertDialog.Material3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="260dp"
+        android:backgroundTint="@color/calculator"
+        android:text="Calculator Other Layout"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalculatorConstraintLayout"
+        tools:ignore="TextContrastCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

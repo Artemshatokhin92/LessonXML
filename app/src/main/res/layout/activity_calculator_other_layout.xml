@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CalculatorOtherLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvNumbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="30dp"
+            android:layout_marginEnd="30dp"
+            android:text="789+56"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:text="845"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnRemovePrevious"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvNumbers" />
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:orientation="horizontal"
+        android:paddingVertical="25dp"
+        android:rowCount="1">
+
+        <ImageButton
+            android:id="@+id/btnRemoveTimer"
+            android:layout_width="@dimen/btn_calculator_optional"
+            android:layout_height="@dimen/btn_calculator_optional"
+            android:background="@drawable/ic_baseline_timer" />
+
+        <ImageButton
+            android:id="@+id/btnStraighten"
+            android:layout_width="@dimen/btn_calculator_optional"
+            android:layout_height="@dimen/btn_calculator_optional"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/ic_baseline_straighten" />
+
+        <ImageButton
+            android:id="@+id/btnCalculator"
+            android:layout_width="@dimen/btn_calculator_optional"
+            android:layout_height="@dimen/btn_calculator_optional"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/ic_baseline_calculate_24" />
+
+        <ImageButton
+            android:id="@+id/btnRemovePrevious"
+            android:layout_width="@dimen/btn_calculator_optional"
+            android:layout_height="@dimen/btn_calculator_optional"
+            android:layout_columnWeight="1"
+            android:layout_gravity="end"
+            android:background="@drawable/ic_baseline_backspace" />
+    </GridLayout>
+
+    <ImageView
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="#DDDDDD" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:rowCount="5">
+
+        <TextView
+            android:id="@+id/btnClear"
+            style="@style/MyTextView"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:text="C"
+            android:textColor="#D50000" />
+
+        <TextView
+            android:id="@+id/btnStaples"
+            style="@style/MyTextView"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:text="( )"
+            android:textColor="@color/calculator" />
+
+        <TextView
+            android:id="@+id/btnPercent"
+            style="@style/MyTextView"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:text="%"
+            android:textColor="@color/calculator" />
+
+        <TextView
+            android:id="@+id/btnDivision"
+            style="@style/MyTextView"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:text="/"
+            android:textColor="@color/calculator" />
+
+        <TextView
+            android:id="@+id/btnSeven"
+            style="@style/MyTextView"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:text="7" />
+
+        <TextView
+            android:id="@+id/btnEight"
+            style="@style/MyTextView"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:text="8" />
+
+        <TextView
+            android:id="@+id/btnNine"
+            style="@style/MyTextView"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:text="9" />
+
+        <TextView
+            android:id="@+id/btnMultiplication"
+            style="@style/MyTextView"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:text="х"
+            android:textColor="@color/calculator" />
+
+        <TextView
+            android:id="@+id/btnFour"
+            style="@style/MyTextView"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:text="4" />
+
+        <TextView
+            android:id="@+id/btnFive"
+            style="@style/MyTextView"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:text="5" />
+
+        <TextView
+            android:id="@+id/btnSix"
+            style="@style/MyTextView"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:text="6" />
+
+        <TextView
+            android:id="@+id/btnMinus"
+            style="@style/MyTextView"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:text="-"
+            android:textColor="@color/calculator" />
+
+        <TextView
+            android:id="@+id/btnOne"
+            style="@style/MyTextView"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/btnTwo"
+            style="@style/MyTextView"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:text="2" />
+
+        <TextView
+            android:id="@+id/btnThree"
+            style="@style/MyTextView"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:text="3" />
+
+        <TextView
+            android:id="@+id/btnPlus"
+            style="@style/MyTextView"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:text="+"
+            android:textColor="@color/calculator" />
+
+        <TextView
+            android:id="@+id/btnPlusMinus"
+            style="@style/MyTextView"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:text="+/-" />
+
+        <TextView
+            android:id="@+id/btnZero"
+            style="@style/MyTextView"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/btnComma"
+            style="@style/MyTextView"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:text="," />
+
+        <TextView
+            android:id="@+id/btnResult"
+            style="@style/MyTextView"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_btn_calculator"
+            android:backgroundTint="@color/calculator"
+            android:text="="
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnComma" />
+    </GridLayout>
+
+</LinearLayout>

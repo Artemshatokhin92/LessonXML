@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="text_category">#5AADE4</color>
+    <color name="icon_menu">#818181</color>
+    <color name="background_header">#5AADE4</color>
+    <color name="text_for_green_background">#D3D3D3</color>
+    <color name="background_music_player">#748B83</color>
+    <color name="calculator">#68B31A</color>
+</resources>

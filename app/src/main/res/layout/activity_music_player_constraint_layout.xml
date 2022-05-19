@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_music_player"
+    tools:context="com.shatokhin.lessonXML.MusicPlayerConstraintLayout">
+
+    <ImageButton
+        android:id="@+id/more"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/ic_baseline_ex"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNamePlayList"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvPlayingNow"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/tvPlayingNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:maxWidth="190dp"
+        android:text="@string/play_now"
+        android:textColor="@color/text_for_green_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tvNamePlayList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="190dp"
+        android:text="@string/name_play_list"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPlayingNow"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/btnDeviceMusic"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ic_baseline_devices"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNamePlayList"
+        app:layout_constraintEnd_toStartOf="@+id/btnPlayList"
+        app:layout_constraintTop_toTopOf="@+id/tvPlayingNow"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/btnPlayList"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ic_baseline_list"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDeviceMusic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnDeviceMusic"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imgLeft"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:paddingTop="28dp"
+        android:paddingEnd="30dp"
+        android:src="@drawable/kolaj"
+        app:layout_constraintEnd_toStartOf="@+id/imgMain"
+        app:layout_constraintTop_toTopOf="@+id/imgMain" />
+
+    <ImageView
+        android:id="@+id/imgMain"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="15dp"
+        android:paddingTop="30dp"
+        android:src="@drawable/angel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNamePlayList" />
+
+    <ImageView
+        android:id="@+id/imgRight"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:paddingStart="30dp"
+        android:paddingTop="28dp"
+        android:src="@drawable/aerosmith"
+        app:layout_constraintStart_toEndOf="@+id/imgMain"
+        app:layout_constraintTop_toTopOf="@+id/imgMain" />
+
+    <TextView
+        android:id="@+id/tvNameMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/name_music"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvNameArtist"
+        app:layout_constraintStart_toStartOf="@+id/tvNameArtist" />
+
+
+    <ImageButton
+        android:id="@+id/btnShare"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/ic_baseline_share"
+        app:layout_constraintBottom_toBottomOf="@+id/btnMenuMusic"
+        app:layout_constraintEnd_toStartOf="@+id/btnMenuMusic"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/btnMenuMusic"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/ic_baseline_more"
+        app:layout_constraintBottom_toTopOf="@+id/seekbarRewind"
+        app:layout_constraintEnd_toEndOf="@+id/seekbarRewind"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
+
+
+    <TextView
+        android:id="@+id/tvNameArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/name_artist"
+        android:textColor="@color/text_for_green_background"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/seekbarRewind"
+        app:layout_constraintStart_toStartOf="@+id/seekbarRewind"
+        tools:ignore="TextContrastCheck" />
+
+    <SeekBar
+        android:id="@+id/seekbarRewind"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:paddingVertical="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgMain" />
+
+    <TextView
+        android:id="@+id/tvCurrentTimeCurrentMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:paddingTop="7dp"
+        android:text="@string/start_time"
+        android:textColor="@color/text_for_green_background"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/seekbarRewind"
+        app:layout_constraintTop_toBottomOf="@+id/seekbarRewind"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tvTimeDurationCurrentSound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:gravity="end"
+        android:paddingTop="7dp"
+        android:text="@string/duration_time"
+        android:textColor="@color/text_for_green_background"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/seekbarRewind"
+        app:layout_constraintTop_toBottomOf="@+id/seekbarRewind"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/btnDeleteFavorite"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ic_baseline_fav"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPreviousSound"
+        app:layout_constraintEnd_toStartOf="@+id/btnPreviousSound"
+        app:layout_constraintTop_toTopOf="@+id/btnPreviousSound"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/btnPreviousSound"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ic_baseline_skip_previous_24"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPlayAndStop"
+        app:layout_constraintEnd_toStartOf="@+id/btnPlayAndStop"
+        app:layout_constraintTop_toTopOf="@+id/btnPlayAndStop"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPlayAndStop"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/white"
+        android:foreground="@drawable/ic_baseline_play_arrow_24"
+        android:foregroundGravity="center|clip_vertical"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekbarRewind"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btnNextSound"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/ic_baseline_skip_next"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPlayAndStop"
+        app:layout_constraintStart_toEndOf="@id/btnPlayAndStop"
+        app:layout_constraintTop_toTopOf="@+id/btnPlayAndStop"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btnAddFavorite"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/ic_baseline_fav"
+        app:layout_constraintBottom_toBottomOf="@+id/btnNextSound"
+        app:layout_constraintStart_toEndOf="@id/btnNextSound"
+        app:layout_constraintTop_toTopOf="@+id/btnNextSound"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/btnRepeatTheCurrentSong"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/ic_baseline_autorenew"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnHQ"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
+
+
+    <ImageButton
+        android:id="@+id/btnHQ"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/ic_baseline_high"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnTimer"
+        app:layout_constraintStart_toEndOf="@id/btnRepeatTheCurrentSong"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/btnTimer"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/ic_baseline_timer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnMixSound"
+        app:layout_constraintStart_toEndOf="@id/btnHQ"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/btnMixSound"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/ic_baseline_shuffle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnTimer"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
